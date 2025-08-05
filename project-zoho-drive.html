@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoho Drive Product Spec - Alex Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header project-header">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="logo">A</div>
+                <span class="brand-text">Aarya Portfolio</span>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-meta">
+                    <span class="project-category">Product Strategy</span>
+                    <span class="project-date">Q2 2023</span>
+                </div>
+                <h1 class="project-hero-title">Zoho Drive Product Specification</h1>
+                <p class="project-hero-subtitle">Comprehensive product specification for cloud storage enhancement with user research insights and technical requirements</p>
+                <div class="project-tags">
+                    <span class="tag">Product Strategy</span>
+                    <span class="tag">User Research</span>
+                    <span class="tag">PRD</span>
+                    <span class="tag">Cloud Storage</span>
+                </div>
+            </div>
+            <div class="project-hero-image">
+                <img src="/placeholder.svg?height=400&width=600" alt="Zoho Drive Project Overview">
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <div class="project-content">
+        <div class="container">
+            <div class="project-layout">
+                <!-- Sidebar Navigation -->
+                <aside class="project-sidebar">
+                    <nav class="project-nav">
+                        <a href="#problem" class="project-nav-link active" data-section="problem">Problem Statement</a>
+                        <a href="#role" class="project-nav-link" data-section="role">My Role & Responsibilities</a>
+                        <a href="#goals" class="project-nav-link" data-section="goals">Goals & KPIs</a>
+                        <a href="#approach" class="project-nav-link" data-section="approach">Approach / Thought Process</a>
+                        <a href="#execution" class="project-nav-link" data-section="execution">Execution & Collaboration</a>
+                        <a href="#launch" class="project-nav-link" data-section="launch">Launch & Impact</a>
+                        <a href="#retrospective" class="project-nav-link" data-section="retrospective">Retrospective</a>
+                        <a href="#artifacts" class="project-nav-link" data-section="artifacts">Artifacts & Links</a>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="project-main">
+                    <!-- Problem Statement -->
+                    <section id="problem" class="project-section">
+                        <h2 class="section-heading">
+                            <i class="fas fa-exclamation-triangle section-icon"></i>
+                            Problem Statement
+                        </h2>
+                        <div class="content-card">
+                            <p class="lead">Zoho Drive users were experiencing significant friction in file sharing and collaboration workflows, leading to decreased productivity and user satisfaction.</p>
+                            
+                            <div class="problem-details">
+                                <div class="problem-item">
+                                    <h4>User Pain Points</h4>
+                                    <ul>
+                                        <li>Complex file sharing process requiring multiple steps</li>
+                                        <li>Limited real-time collaboration features</li>
+                                        <li>Inconsistent user experience across devices</li>
+                                        <li>Poor file organization and search capabilities</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="problem-item">
+                                    <h4>Business Impact</h4>
+                                    <ul>
+                                        <li>25% increase in support tickets related to file sharing</li>
+                                        <li>15% drop in user engagement over 6 months</li>
+                                        <li>Competitive disadvantage against Google Drive and Dropbox</li>
+                                        <li>Potential revenue loss from churning enterprise customers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- My Role & Responsibilities -->
+                    <section id="role" class="project-section">
+                        <h2 class="section-heading">
+                            <i class="fas fa-user-tie section-icon"></i>
+                            My Role & Responsibilities
+                        </h2>
+                        <div class="content-card">
+                            <div class="role-overview">
+                                <h4>Lead Product Manager</h4>
+                                <p>I led the end-to-end product specification process for Zoho Drive's collaboration enhancement initiative.</p>
+                            </div>
+                            
+                            <div class="responsibilities-grid">
+                                <div class="responsibility-item">
+                                    <i class="fas fa-search"></i>
+                                    <h5>Research & Analysis</h5>
+                                    <p>Conducted user interviews, competitive analysis, and data analysis to identify key improvement areas</p>
+                                </div>
+                                
+                                <div class="responsibility-item">
+                                    <i class="fas fa-users"></i>
+                                    <h5>Stakeholder Management</h5>
+                                    <p>Coordinated with engineering, design, and business teams to align on product vision and requirements</p>
+                                </div>
+                                
+                                <div class="responsibility-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    <h5>Documentation</h5>
+                                    <p>Created comprehensive PRDs, user stories, and technical specifications for development teams</p>
+                                </div>
+                                
+                                <div class="responsibility-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h5>Success Metrics</h5>
+                                    <p>Defined KPIs and success metrics to measure product performance and user satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Goals & KPIs -->
+                    <section id="goals" class="project-section">
+                        <h2 class="section-heading">
+                            <i class="fas fa-bullseye section-icon"></i>
+                            Goals & KPIs
+                        </h2>
+                        <div class="content-card">
+                            <div class="goals-grid">
+                                <div class="goal-category">
+                                    <h4>User Experience Goals</h4>
+                                    <div class="kpi-list">
+                                        <div class="kpi-item">
+                                            <span class="kpi-metric">40%</span>
+                                            <span class="kpi-description">Reduction in file sharing steps</span>
+                                        </div>
+                                        <div class="kpi-item">
+                                            <span class="kpi-metric">60%</span>
+                                            <span class="kpi-description">Improvement in user satisfaction scores</span>
+                                        </div>
+                                        <div class="kpi-item">
+                                            <span class="kpi-metric">30%</span>
+                                            <span class="kpi-description">Increase in collaboration feature usage</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="goal-category">
+                                    <h4>Business Goals</h4>
+                                    <div class="kpi-list">
+                                        <div class="kpi-item">
+                                            <span class="kpi-metric">25%</span>
+                                            <span class="kpi-description">Reduction in support tickets</span>
+                                        </div>
+                                        <div class="kpi-item">
+                                            <span class="kpi-metric">20%</span>
+                                            <span class="kpi-description">Increase in user retention</span>
+                                        </div>
+                                        <div class="kpi-item">
+                                            <span class="kpi-metric">15%</span>
+                                            <span class="kpi-description">Growth in enterprise subscriptions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Approach / Thought Process -->
+                    <section id="approach" class="project-section">
+                        <h2 class="section-heading">
+                            <i class="fas fa-lightbulb section-icon"></i>
+                            Approach / Thought Process
+                        </h2>
+                        <div class="content-card">
+                            <div class="approach-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">1</div>
+                                    <div class="timeline-content">
+                                        <h4>Discovery & Research</h4>
+                                        <p>Conducted 20+ user interviews, analyzed usage data, and performed competitive analysis to understand current pain points and market opportunities.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">2</div>
+                                    <div class="timeline-content">
+                                        <h4>Problem Prioritization</h4>
+                                        <p>Used impact vs effort matrix to prioritize features based on user value and technical feasibility.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">3</div>
+                                    <div class="timeline-content">
+                                        <h4>Solution Design</h4>
+                                        <p>Created user journey maps, wireframes, and detailed user stories to define the enhanced collaboration experience.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">4</div>
+                                    <div class="timeline-content">
+                                        <h4>Technical Specification</h4>
+                                        <p>Worked with engineering teams to define technical requirements, API specifications, and implementation roadmap.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Execution & Collaboration -->
+                    <section id="execution" class="project-section">
+                        <h2 class="section-heading">
+                            <i class="fas fa-cogs section-icon"></i>
+                            Execution & Collaboration
+                        </h2>
+                        <div class="content-card">
+                            <div class="execution-overview">
+                                <p>Led a cross-functional team of 12 members across product, engineering, design, and QA to deliver the enhanced collaboration features.</p>
+                            </div>
+                            
+                            <div class="collaboration-details">
+                                <div class="collab-section">
+                                    <h4>Team Structure</h4>
+                                    <div class="team-grid">
+                                        <div class="team-member">
+                                            <i class="fas fa-code"></i>
+                                            <span>4 Engineers</span>
+                                        </div>
+                                        <div class="team-member">
+                                            <i class="fas fa-paint-brush"></i>
+                                            <span>2 Designers</span>
+                                        </div>
+                                        <div class="team-member">
+                                            <i class="fas fa-bug"></i>
+                                            <span>2 QA Engineers</span>
+                                        </div>
+                                        <div class="team-member">
+                                            <i class="fas fa-chart-bar"></i>
+                                            <span>1 Data Analyst</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="collab-section">
+                                    <h4>Key Collaboration Activities</h4>
+                                    <ul>
+                                        <li>Weekly sprint planning and retrospectives</li>
+                                        <li>Daily standups with engineering team</li>
+                                        <li>Bi-weekly design reviews and user testing sessions</li>
+                                        <li>Monthly stakeholder updates and feedback sessions</li>
+                                        <li>Cross-team integration meetings with platform teams</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Launch & Impact -->
+                    <section id="launch" class="project-section">
+                        <h2 class="section-heading">
+                            <i class="fas fa-rocket section-icon"></i>
+                            Launch & Impact
+                        </h2>
+                        <div class="content-card">
+                            <div class="launch-strategy">
+                                <h4>Launch Strategy</h4>
+                                <p>Implemented a phased rollout approach starting with beta users, followed by gradual expansion to all user segments.</p>
+                            </div>
+                            
+                            <div class="impact-metrics">
+                                <h4>Results Achieved</h4>
+                                <div class="metrics-grid">
+                                    <div class="metric-card success">
+                                        <div class="metric-value">20%</div>
+                                        <div class="metric-label">Reduction in file sharing steps</div>
+                                        <div class="metric-status">Achieved target</div>
+                                    </div>
+                                    
+                                    <div class="metric-card success">
+                                        <div class="metric-value">40%</div>
+                                        <div class="metric-label">Improvement in user satisfaction</div>
+                                        <div class="metric-status">Achieved target</div>
+                                    </div>
+                                    
+                                    <div class="metric-card success">
+                                        <div class="metric-value">25%</div>
+                                        <div class="metric-label">Increase in collaboration usage</div>
+                                        <div class="metric-status">Achieved target</div>
+                                    </div>
+                                    
+                                    <div class="metric-card success">
+                                        <div class="metric-value">15%</div>
+                                        <div class="metric-label">Reduction in support tickets</div>
+                                        <div class="metric-status">Achieved target</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Retrospective -->
+                    <section id="retrospective" class="project-section">
+                        <h2 class="section-heading">
+                            <i class="fas fa-mirror section-icon"></i>
+                            Retrospective
+                        </h2>
+                        <div class="content-card">
+                            <div class="retrospective-grid">
+                                <div class="retro-section success">
+                                    <h4>What Went Well</h4>
+                                    <ul>
+                                        <li>Strong cross-functional collaboration and communication</li>
+                                        <li>Comprehensive user research led to well-informed decisions</li>
+                                        <li>Phased rollout approach minimized risks and allowed for iterations</li>
+                                        <li>Achieved all key performance indicators</li>
+                                        <li>Positive user feedback and adoption rates</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="retro-section challenge">
+                                    <h4>Challenges & Learnings</h4>
+                                    <ul>
+                                        <li>Initial technical complexity required additional architecture discussions</li>
+                                        <li>User testing revealed edge cases not covered in initial requirements</li>
+                                        <li>Integration with existing systems took longer than anticipated</li>
+                                        <li>Need for better change management communication to users</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="retro-section improvement">
+                                    <h4>Future Improvements</h4>
+                                    <ul>
+                                        <li>Implement more comprehensive technical discovery phase</li>
+                                        <li>Include edge case scenarios in initial user story mapping</li>
+                                        <li>Develop better integration testing frameworks</li>
+                                        <li>Create more robust user communication and training materials</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Artifacts & Links -->
+                    <section id="artifacts" class="project-section">
+                        <h2 class="section-heading">
+                            <i class="fas fa-folder-open section-icon"></i>
+                            Artifacts & Links
+                        </h2>
+                        <div class="content-card">
+                            <div class="artifacts-grid">
+                                <div class="artifact-item">
+                                    <div class="artifact-icon">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <div class="artifact-content">
+                                        <h5>Product Requirements Document</h5>
+                                        <p>Comprehensive PRD with user stories, acceptance criteria, and technical specifications</p>
+                                        <a href="#" class="artifact-link">View Document <i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="artifact-item">
+                                    <div class="artifact-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="artifact-content">
+                                        <h5>User Research Report</h5>
+                                        <p>Detailed analysis of user interviews, surveys, and behavioral data</p>
+                                        <a href="#" class="artifact-link">View Report <i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="artifact-item">
+                                    <div class="artifact-icon">
+                                        <i class="fas fa-sitemap"></i>
+                                    </div>
+                                    <div class="artifact-content">
+                                        <h5>User Journey Maps</h5>
+                                        <p>Visual representation of user flows and interaction points</p>
+                                        <a href="#" class="artifact-link">View Maps <i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="artifact-item">
+                                    <div class="artifact-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="artifact-content">
+                                        <h5>Performance Dashboard</h5>
+                                        <p>Real-time metrics and KPI tracking for the launched features</p>
+                                        <a href="#" class="artifact-link">View Dashboard <i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aarya. Built with HTML, CSS and lots of ☕</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

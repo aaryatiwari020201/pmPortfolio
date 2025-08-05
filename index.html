@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarya - Product Manager Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">A</div>
+                <span class="brand-text">Aarya's Portfolio</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About Me</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                <div class="nav-divider"></div>
+                <a href="resume.pdf" target="_blank" class="btn btn-outline btn-sm">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="nav-mobile">
+                <button class="theme-toggle" id="themeToggleMobile">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav">
+                <a href="#home" class="mobile-nav-link" data-section="home">Home</a>
+                <a href="#about" class="mobile-nav-link" data-section="about">About Me</a>
+                <a href="#experience" class="mobile-nav-link" data-section="experience">Experience</a>
+                <a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a>
+                <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+                <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+                <a href="resume.pdf" target="_blank" class="btn btn-outline">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="https://res.cloudinary.com/dvaczt1ac/image/upload/v1751127027/Casual_Photograph_-_Aarya_kho2ii.png" alt="Profile" class="profile-img">
+                    <div class="status-indicator"></div>
+                </div>
+                <h1 class="hero-title">Hey, I'm Aarya! 👋</h1>
+                <p class="hero-subtitle">Associate Product Manager turning ambiguity into roadmaps</p>
+                <div class="hero-badges">
+                    <div class="badge">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Pune, India</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-building"></i>
+                        <span>OSMOS</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-calendar"></i>
+                        <span>BITS Pilani '23 Alum</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-lg" onclick="scrollToSection('contact')">
+                    Let's Connect
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="card about-card">
+                <div class="about-content">
+                    <p class="about-intro"><strong>Dear Reader,</strong> 📝</p>
+                    <p>Welcome to my little corner of the internet! I'm currently working as an Associate Product Manager at <strong>OSMOS</strong>, where I spend my time turning messy problems into clear specs and ideas into things people actually use.</p>
+                    <p>I studied at <strong>BITS Pilani</strong>, where I stumbled into product in my last year and never really looked back. I'm especially drawn to the early, scrappy parts of building - understanding users through data, <strong>obsessing</strong> over edge cases, and figuring out what and what not to ship.</p>
+                    <p>I enjoy the weird mix of creativity and logic that product demands. Whether it's drafting a PRD, debugging adoption metrics, or trying to make sense of a half-broken Figma file - I'm, usually in my zone.</p>
+                    <p>If there's one thing I aim for, it's to be <strong>that person who brings clarity, asks the right questions, and gets things moving</strong>. Still figuring things out, but learning every sprint.</p>
+                    <p>Some other things I absolutely geek out on:</p>
+                    <ul class="experience-list">
+                        <li>💃 Dance → Self-trained in western dance forms, and once led the BITS Pilani Dance Club</li>
+                        <li>📺 F.R.I.E.N.D.S. → Probably quoting Monica when I should be writing documentation...kidding kidding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-grid">
+                <div class="card experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3 class="experience-title">Associate Product Manager</h3>
+                            <p class="experience-company">OSMOS</p>
+                        </div>
+                        <div class="experience-duration">2023 - Present</div>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Led 0-to-1 development for AI suggestions for different personas, Billing System Revamp, System communication module for driving platform demand, and Upgraded navigation dashboard workflows, driving 42% uptick in adoption and contributing to ~$120K ARR within avg. 6 months lifecycle.</li>
+                        <li>Spearheaded the end-to-end launch of net-new ad formats (e.g., Product Display Ads, Email Ads, etc.) by owning the product lifecycle — from market research and persona mapping to PRD authoring, UX flow design, backend spec alignment, and release orchestration across frontend and SDK integrations.</li>
+                        <li>Reduced average onboarding timelines by ~$3,600/onboarding in internal resource cost through ideation, launch, and developer & sales ready documentation of Osmos Rendering SDKs supporting 15+ native and non-native ad formats; additionally led integration of IAB-compliant Open Measurement SDKs to achieve ad verification compatibility with partners like IAS and DoubleVerify, enhancing platform credibility.</li>
+                        <li>Built and managed product performance dashboards using SQL, Metabase, and Tableau, tracking critical performance KPIs (CTR, Response Rate, GMV width) and enabling data-informed prioritization for both product roadmap and engineering investments.</li>
+                        <li>Developed and maintained product adoption and internal reporting dashboards using Pendo, GA4 and Metabase, providing KPIs to product and engineering teams for each feature launch.</li>
+                        <li>Owned the product delivery pipeline by coordinating across Engineering, Design, and Product Marketing; translated high-level feature requirements into detailed, sprint-ready stories, led weekly grooming/planning, and reduced iteration cycles by ~25% through tighter alignment and early-stage technical scoping.</li>
+                        <li>Created internal release notes, demos, and user-facing documentation to ensure successful rollout and adoption of major features across platforms.</li>
+                        <li>Designed and executed structured A/B experiments to test improvements in advertiser workflows; leveraged conversion funnel analysis and cohort-based user behavior tracking to iterate features, resulting in ~40% increases in platform engagement and conversions.</li>
+                        <li>Built GTM plans for new product launches, working with marketing and Client Partner teams to drive usage, feature adoption, and feedback loops.</li>
+                    </ul>
+                </div>
+
+                <div class="card experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3 class="experience-title">Data Analytics Intern</h3>
+                            <p class="experience-company">Credit Suisse</p>
+                        </div>
+                        <div class="experience-duration">Summer 2022</div>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Developed automated reporting tools using Appscript and SQL to track key risk metrics for equity and fixed income portfolios.</li>
+                        <li>Conducted data analysis to identify trends and anomalies in market risk data, providing insights to senior management.</li>
+                        <li>Assisted in the development of new risk models and methodologies, contributing to improved risk management practices.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="companies">
+        <div class="container">
+            <h2 class="section-subtitle">Logos I've Worked With</h2>
+            <div class="companies-grid">
+                <div class="company-logo"><img src="https://cdn.brandfetch.io/idRILRSTEh/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Tata Cliq"></div>
+                <div class="company-logo"><img src="https://cdn.brandfetch.io/idh5Jct7tV/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Hotstar"></div>
+                <div class="company-logo"><img src="https://cdn.brandfetch.io/idmjhO-S03/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Zepto"></div>
+                <div class="company-logo"><img src="https://images.yourstory.com/cs/images/companies/rapido-1588061801805.png?fm=auto&ar=1%3A1&mode=fill&fill=solid&fill-color=fff&format=auto&w=384&q=75" alt="Rapido"></div>
+                <div class="company-logo"><img src="https://cdn.brandfetch.io/id_VV-ioJ_/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Purplle"></div>
+                <div class="company-logo"><img src="https://cdn.brandfetch.io/idCCxXrcyY/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" alt="1mg"></div>
+                <div class="company-logo"><img src="https://cdn.brandfetch.io/idfQje9EQy/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Wakefern"></div>
+                <div class="company-logo"><img src="https://res.cloudinary.com/dvaczt1ac/image/upload/v1751129123/download_4_blblcz.png" alt="Snapdeal"></div>
+                <div class="company-logo"><img src="https://cdn.brandfetch.io/idIwi73LUs/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Tesco"></div>
+                <div class="company-logo"><img src="https://cdn.brandfetch.io/idOXr7hf_J/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" alt="SharafDG"></div>
+                <div class="company-logo"><img src="https://cdn.brandfetch.io/id5ZVQblsL/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Takealot"></div>
+                <div class="company-logo"><img src="https://res.cloudinary.com/dvaczt1ac/image/upload/v1751128644/download_2_wxixie.png" alt="LimeRoad"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="card project-card" onclick="window.location.href='project-investomart.html'">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Investomart Project">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Investomart Pitch Deck</h3>
+                            <i class="fas fa-external-link-alt project-icon"></i>
+                        </div>
+                        <p class="project-description">Strategic investment platform proposal with comprehensive market analysis and competitive positioning.</p>
+                        <div class="project-tags">
+                            <span class="tag">Market Research</span>
+                            <span class="tag">Strategy</span>
+                            <span class="tag">Pitch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card project-card" onclick="window.location.href='project-Engagement-platform.html'">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="All-in-one Engagement Platform ">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">All-in-one Engagement Platform</h3>
+                            <i class="fas fa-external-link-alt project-icon"></i>
+                        </div>
+                        <p class="project-description">Strategic investment platform proposal with comprehensive market analysis and competitive positioning.</p>
+                        <div class="project-tags">
+                            <span class="tag">Market Research</span>
+                            <span class="tag">0-to-1 Decelopment</span>
+                            <span class="tag">Pitch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card project-card" onclick="window.location.href='project-ott-order-management.html'">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="OTT Ads Order Management System">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">OTT Ads Order Management System</h3>
+                            <i class="fas fa-external-link-alt project-icon"></i>
+                        </div>
+                        <p class="project-description">End-to-end development of revamped billing system achieving 45% adoption in Q1 and driving $1.7M in projected ARR growth</p>
+                        <div class="project-tags">
+                            <span class="tag">0-to-1 Development</span>
+                            <span class="tag">Ad Format Landscape</span>
+                            <span class="tag">Revenue Growth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card project-card" onclick="window.location.href='project-zoho-drive.html'">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Zoho Drive Project">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Zoho Drive Product Spec</h3>
+                            <i class="fas fa-external-link-alt project-icon"></i>
+                        </div>
+                        <p class="project-description">Comprehensive product specification for cloud storage enhancement with user research insights and technical requirements.</p>
+                        <div class="project-tags">
+                            <span class="tag">Product Strategy</span>
+                            <span class="tag">User Research</span>
+                            <span class="tag">PRD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card project-card" onclick="window.location.href='project-hevo-rca.html'">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Hevo RCA Project">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Hevo Root Cause Analysis</h3>
+                            <i class="fas fa-external-link-alt project-icon"></i>
+                        </div>
+                        <p class="project-description">Deep-dive analysis into data pipeline performance issues, identifying bottlenecks and optimization opportunities.</p>
+                        <div class="project-tags">
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Problem Solving</span>
+                            <span class="tag">RCA</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="card skill-card">
+                    <h3 class="skill-title">Product Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Product Strategy</span>
+                        <span class="skill-tag primary">Product Roadmapping</span>
+                        <span class="skill-tag primary">Data-Driven Decision Making</span>
+                        <span class="skill-tag primary">User Research</span>
+                        <span class="skill-tag primary">Wireframing</span>
+                        <span class="skill-tag primary">PRD Development</span>
+                        <span class="skill-tag primary">Market Analysis</span>
+                    </div>
+                </div>
+
+                <div class="card skill-card">
+                    <h3 class="skill-title">Technical Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag outline">APIs/Webhooks</span>
+                        <span class="skill-tag outline">SDKs</span>
+                        <span class="skill-tag outline">JavaScript</span>
+                        <span class="skill-tag outline">html</span>
+                        <span class="skill-tag outline">Python</span>
+                        <span class="skill-tag outline">SQL</span>
+                        <span class="skill-tag outline">Appscript</span>
+
+                    </div>
+                </div>
+
+                <div class="card skill-card">
+                    <h3 class="skill-title">Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag secondary">Postman</span>
+                        <span class="skill-tag secondary">Figma</span>
+                        <span class="skill-tag secondary">Git</span>
+                        <span class="skill-tag secondary">Notion/Jira/Asana</span>
+                        <span class="skill-tag secondary">Mixpanel/Pendo</span>
+                        <span class="skill-tag secondary">Excel/GSheets</span>
+                        <span class="skill-tag secondary">IBM Cognos</span>
+                        <span class="skill-tag secondary">Tableau</span>
+                        <span class="skill-tag secondary">Jupyter</span>
+                        <span class="skill-tag secondary">Metabase</span>
+                        <span class="skill-tag secondary">Google Analytics 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="skills-grid">
+                <div class="card skill-card">
+                    <h3 class="skill-title">Certifications</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag secondary">Scrum Master Training - Simplilearn</span>
+                        <span class="skill-tag secondary">PM Nanodegree - Udacity</span>
+                        <span class="skill-tag secondary">Google Project Management - Coursera</span>
+                        <span class="skill-tag secondary">IBM Data Analyst Professional Certificate - Coursera</span>
+                        <span class="skill-tag secondary">Python Programming - Coding Ninjas</span>
+                        <span class="skill-tag secondary">Applied Machine Learning in Python - Coursera</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect!</h2>
+            <p class="contact-description">Always excited to discuss product analytics, share data-driven insights, or explore new opportunities. Let's build something amazing together!</p>
+            <div class="contact-buttons">
+                <a href="mailto:aaryatiw@gmail.com" class="btn btn-primary btn-lg">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/aarya-tiwari-0b92aa1a0/" target="_blank" class="btn btn-outline btn-lg">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.instagram.com/aaryatiwari_" target="_blank" class="btn btn-outline btn-lg">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="resume.pdf" target="_blank" class="btn btn-outline btn-lg">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aarya. Built with HTML, CSS, JS and lots of ☕</p>
+            <p class="footer-subtitle">Crafted with passion for great product experiences</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
